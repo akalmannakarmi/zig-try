@@ -1,3 +1,6 @@
+const std = @import("std");
+const expect = std.testing.expect;
+
 fn ticker(step: u8) void {
     while (true) {
         std.time.sleep(1 * std.time.ns_per_s);

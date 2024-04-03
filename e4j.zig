@@ -1,3 +1,7 @@
+const std = @import("std");
+const expect = std.testing.expect;
+const test_allocator = std.testing.allocator;
+
 test "stack" {
     const string = "(()())";
     var stack = std.ArrayList(usize).init(
